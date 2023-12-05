@@ -1,0 +1,16 @@
+description: SandMan APT LuaJIT
+author: Loc5
+date: 06/12/2023
+modified:
+mitre: 
+   tactic: 
+   technique: 
+   subtechnique: 
+operating_system: windows
+query:FilePath In Contains ( "C:\Windows\System32\ualapi.dll" , "C:\ProgramData\FaxConfig\fax.dat" , "C:\ProgramData\FaxConfig\fax.cache" , "C:\ProgramData\FaxConfig\fax.module" , "C:\ProgramData\FaxConfig\fax.Application" , "C:\ProgramData\FaxLib" ) OR DnsRequest In Contains ( "mode encagil.com" , "ssl.explorecell.com" )
+
+tags:
+   - UNC2452
+   - DarkHalo
+   - SolarWinds
+references:https://www.sentinelone.com/labs/?utm_medium=paid-display&utm_source=google-paid&utm_campaign=fr-bau-packages&gclid=EAIaIQobChMI1vq_9qr5ggMVb4poCR1jDgpbEAAYASAAEgKvpfD_BwE
