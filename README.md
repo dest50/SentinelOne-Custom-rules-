@@ -1,2 +1,2 @@
 # SentinelOne-Custom-rules-
-Repository of SentinelOne Deep Visibility queries based on Sigma rule from detection.fyi
+Repository of SentinelOne Deep Visibility queries based on Sigma rule from detection.fyi and others articles
