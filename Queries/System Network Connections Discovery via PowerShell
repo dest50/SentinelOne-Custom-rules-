@@ -1,0 +1,7 @@
+title: System Network Connections Discovery via PowerShell
+description: Detects system network connections discovery via PowerShell
+author: Kaspersky
+status: stable
+querie: (FilePath EndsWith Anycase "\powershell.exe" OR FilePath EndsWith Anycase "\powershell_ise.exe")  AND CmdLine Contains "Get-NetTCPConnection"
+falsepositives: Legitimate Administrator activity
+level: low
