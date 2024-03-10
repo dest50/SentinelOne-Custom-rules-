@@ -1,0 +1,10 @@
+title: Shadow Copies Deletion
+description: Detects deleting shadow copies or backups by system utilities
+author: Kaspersky
+status: stable
+tags:
+- attack.Impact
+- attack.T1490
+logsource:
+product: windows
+category: process _ creation
