@@ -5,6 +5,7 @@ status: stable
 tags:
 - attack.Impact
 - attack.T1490
-logsource:
+querie: ((FilePath EndsWith Anycase "\vssadmin.exe"  OR FilePath EndsWith Anycase "\wmic.exe"  OR FilePath EndsWith Anycase "\powershell.exe" OR FilePath EndsWith Anycase "\wbadmin.exe" OR FilePath EndsWith Anycase "diskshadow.exe’" )  AND ( (CmdLine Contains Anycase "delete" AND CmdLine Contains Anycase "shadow") OR (CmdLine Contains Anycase "resize" AND CmdLine Contains Anycase "shadowstorage")  OR ( CmdLine Contains Anycase "Win32 _ Shadowcopy"  AND CmdLine Contains Anycase "delete" )))
+
 product: windows
 category: process _ creation
