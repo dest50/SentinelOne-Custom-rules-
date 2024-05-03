@@ -1,0 +1,2 @@
+Description: Detect pingcastle launched on your domain
+( SrcProcPublisher Contains Anycase "Ping Castle SAS" OR TgtProcPublisher Contains Anycase "Ping Castle SAS" OR FilePath Contains Anycase "PingCastle.exe" )
